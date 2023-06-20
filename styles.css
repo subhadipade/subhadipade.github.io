@@ -965,7 +965,7 @@ nav .fa-solid{
         letter-spacing: 0.03cm;
         line-height: 0.7cm;
         justify-content: center;
-        margin-right: 10px;
+        /* margin-right: 10px; */
     }
     .tab-links{
         font-size: 45px;
