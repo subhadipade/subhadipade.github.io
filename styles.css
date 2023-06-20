@@ -816,7 +816,7 @@ form .btn2{
 nav .fa-solid{
     display: none;
 }
-@media only screen and (max-width:510px) {
+@media only screen and (max-width:480px) {
     #header{
         /* background-image: url(bg6.jpg); */
         width: auto;
@@ -1168,7 +1168,7 @@ nav .fa-solid{
     margin-top: -30px;
     display: block;
 }
-@media only screen and (max-width:1255px) and (min-width:511px){
+@media only screen and (max-width:1255px) and (min-width:481px){
     #header{
         background-image: url(bg5.jpg);
         width: auto;
@@ -1368,7 +1368,7 @@ nav .fa-solid{
         margin-bottom: 30px;
     }
 }
-@media only screen and (max-width:800px) and (min-width:511px){
+@media only screen and (max-width:800px) and (min-width:481px){
     .contact-left,.contact-right{
         flex-basis: 100%;
     }
