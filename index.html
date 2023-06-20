@@ -48,7 +48,7 @@
             <div id="headerDown">
                 <div id="leftOne" class="header-text">
                     <h2>Hello, I'm <br> <span>Subhadipa De</span></h2>
-                    <h3>Web Designer & Student</h3>
+                    <h3> Student & Web Developer</h3>
                 </div>
                 <div id="rightOne">
                     <!-- <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_wtr7b7jx.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" hover   autoplay id="animate"></lottie-player> -->
@@ -89,7 +89,7 @@
                             </div>
                             <div class="about-me-ul2 reveal">
                                 <ul>
-                                    <li><i class="fa-solid fa-arrow-right"></i><strong>Age:</strong> 19+</li>
+                                    <li><i class="fa-solid fa-arrow-right"></i><strong>Age:</strong> 20+</li>
                                     <li><i class="fa-solid fa-arrow-right"></i><strong>Degree:</strong> Bachelor Of
                                         Technology</li>
                                     <li><i class="fa-solid fa-arrow-right"></i><strong>Phone:</strong>+91 8420289107
@@ -166,18 +166,21 @@
                 <h4>Electronics and Communication Engineering (B.Tech)</h4>
                 <h5>2020 - Present</h5>
                 <p><em>St.Thomas' College of Engineering and Technology</em></p>
+                <div class="edu-item-para">
                 <p>St.Thomas' College of Engineering and Technology , Approved by All India Council for Technical
                     Education (AICTE) and Affiliated to Maulana Abul Kalam Azad University of Technology, West Bengal,
                     India. It started its journey in the year of 2000. </p>
+                </div>
             </div>
             <div class="edu-item">
                 <h4>High Secondary(Class XII-Science)</h4>
                 <h5>2018 - 2020</h5>
                 <p><em>United Missionary Girls' High School</em></p>
+                <div class="edu-item-para">
                 <p>United Missionary Girls’ High School first opened in 1834 as a boarding school for twenty-four boys.
                     The premises later shifted from Alipore to Bhownipur when a girls’ section was added in 1837. In
                     1916, the Methodist Missionary Society and British Missionary Society combined with the London
-                    Missionary Society to become United Missionary Girls’ High School.</p>
+                    Missionary Society to become United Missionary Girls’ High School.</p></div>
             </div>
             <div class="edu-item">
                 <h4>School(Primary and Secondary)</h4>
@@ -323,11 +326,33 @@
         </div>
         <div class="copyright">
             <p>Copyright © <Strong> Subhadipa De </Strong> </p>
-            <a href="#" class="back-to-top" style="display: inline;"><i class="fa-solid fa-arrow-up"></i></a>
+            <!-- <a href="#" class="back-to-top" style="display: inline;"><i class="fa-solid fa-arrow-up"></i></a> -->
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
         </div>
     </div>
 
     <!--script  -->
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
     <script>
         var sidemenu = document.getElementById("sidemenu");
 

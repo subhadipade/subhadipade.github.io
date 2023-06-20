@@ -57,7 +57,7 @@ body{
     /*margin-top: 25px;*/
     cursor: pointer;
     /* background:radial-gradient(rgb(85, 85, 85),rgb(24, 24, 24)); */
-    background-color: rgb(35, 35, 35);
+    background-color: rgb(2, 69, 107);
     z-index: 1;
     height: 80px;
     width: 100%;
@@ -92,7 +92,7 @@ nav ul li{
     font-size: 40px;
 }
 nav ul li a{
-    color: wheat;
+    color: rgb(251, 245, 236);
     text-decoration: none;
     font-size: 20px;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -111,6 +111,7 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width:100%;
 }
+
 /* **************************animation************************* */
 #headerDown{
     display: flex;
@@ -393,6 +394,12 @@ nav ul li a:hover::after{
     font-style: italic;
   }
   .edu-item p{
+    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 50px;
+    font-weight: 200;
+  }
+  .edu-item-para{
     font-size: 23px;
     font-family: 'Times New Roman', Times, serif;
     margin-right: 50px;
@@ -713,8 +720,8 @@ nav ul li a:hover::after{
 .contact-right{
     flex-basis:50%;
     padding: 0px 25px;
-    background: #2a2929;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    background: #212020;
+  box-shadow: 0 0 24px 0 rgba(19, 20, 20, 0.12);
 }
 .contact-right form{
     width:100%;
@@ -723,7 +730,7 @@ form input, form textarea{
     width: 100%;
     border:0;
     outline: none;
-    background: #040404;
+    background: #393939;
     padding: 15px;
     margin:15px 0;
     color:#fff;
@@ -764,32 +771,33 @@ form .btn2{
 .copyright p{
     font-family: 'Times New Roman', Times, serif;
 }
-.back-to-top {
-    position: fixed;
-    display: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 2px;
-    right: 15px;
-    bottom: 15px;
-    background: #70c4eb;
-    color: #fff;
-    transition: display 1s ease-in-out;
-    z-index: 99999;
-    transition-delay: 1s;
-  }
-
-  .back-to-top i {
-    font-size: 24px;
+#myBtn i {
+    font-size: 20px;
     position: absolute;
     top: 7px;
-    left: 10px;
+    left: 0px;
+    right: 0;
   }
   
-  .back-to-top:hover {
-    color: #fff;
-    background: #547788;
-    transition: background 1s ease-in-out;
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(194, 227, 250);
+    color: rgb(12, 12, 12);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+    transition: background 1.5s ease-in;
   }
   
   /*Animation*/
@@ -808,7 +816,7 @@ form .btn2{
 nav .fa-solid{
     display: none;
 }
-@media only screen and (max-width:451px) {
+@media only screen and (max-width:490px) {
     #header{
         /* background-image: url(bg6.jpg); */
         width: auto;
@@ -864,7 +872,7 @@ nav .fa-solid{
     nav .fa-bars{
         display: block;
         font-size:25px;
-        color: black;
+        color: rgb(75, 73, 73);
     }
     #sidemenu{
         margin-top: 0;
@@ -971,6 +979,12 @@ nav .fa-solid{
     }
     .tab-contents-col2{
         margin: 0;
+    }
+    .edu-item p{
+        font-weight:300;
+    }
+    .edu-item-para{
+        display: none;
     }
     .skill{
         width:280px;
@@ -1118,31 +1132,33 @@ nav .fa-solid{
         background:transparent;
     }
 
-    .back-to-top {
-        position: fixed;
-        display: none;
-        width: 40px;
-        height: 40px;
-        border-radius: 200px;
-        right: 10px;
-        bottom:43px;
-        background: #70c4eb;
-        color: #fff;
-        transition: display 0.9s ease-in;
-        z-index: 99999;
-      }
-      
-      .back-to-top i {
-        font-size: 24px;
+   
+      #myBtn i {
+        font-size: 20px;
         position: absolute;
         top: 7px;
         left: 0px;
         right: 0;
       }
       
-      .back-to-top:hover {
-        color: #fff;
-        background: #547788;
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: rgb(194, 227, 250);
+        color: rgb(12, 12, 12);
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+      
+      #myBtn:hover {
+        background-color: #555;
         transition: background 0.9s ease-in;
       }
 
@@ -1152,7 +1168,7 @@ nav .fa-solid{
     margin-top: -30px;
     display: block;
 }
-@media only screen and (max-width:1255px) and (min-width:452px){
+@media only screen and (max-width:1255px) and (min-width:491px){
     #header{
         background-image: url(bg5.jpg);
         width: auto;
@@ -1352,7 +1368,7 @@ nav .fa-solid{
         margin-bottom: 30px;
     }
 }
-@media only screen and (max-width:800px) and (min-width:452px){
+@media only screen and (max-width:800px) and (min-width:491px){
     .contact-left,.contact-right{
         flex-basis: 100%;
     }
@@ -1360,4 +1376,32 @@ nav .fa-solid{
         font-size: 14px;
         margin-top: 30px;
     }
+    #myBtn i {
+        font-size: 20px;
+        position: absolute;
+        top: 7px;
+        left: 0px;
+        right: 0;
+      }
+      
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: rgb(194, 227, 250);
+        color: rgb(12, 12, 12);
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+      
+      #myBtn:hover {
+        background-color: #555;
+        transition: background 0.9s ease-in;
+      }
 }
