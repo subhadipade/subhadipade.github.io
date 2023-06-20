@@ -1189,7 +1189,7 @@ nav .fa-solid{
     margin-right: 0px;
     }
     #rightOne img{
-        width: 500px;
+        width: 457px;
     }
     #headerDown{
         display: flex;
@@ -1294,8 +1294,12 @@ nav .fa-solid{
         display: none;
     }
     /*About-Skills*/
+    .about-me ul li{
+        font-size: 20px;
+    }
+    
     .skill{
-        width:500px;
+        width:378px;
         height: 7px;
         background-color:rgb(163, 227, 237);
         display: flex;
@@ -1314,31 +1318,31 @@ nav .fa-solid{
     .eighty5{
     
         height: 7px;
-        width:440px;
+        width:340px;
         background-color:rgb(36, 57, 37) ;
     }
     .eighty{
     
         height: 7px;
-        width:400px;
+        width:320px;
         background-color:rgb(36, 57, 37) ;
     }
     .seventy{
     
         height: 7px;
-        width:350px;
+        width:300px;
         background-color:rgb(36, 57, 37) ;
     }
     .seventy5{
     
         height: 7px;
-        width:380px;
+        width:310px;
         background-color:rgb(36, 57, 37) ;
     }
     .forty{
     
         height: 7px;
-        width:200px;
+        width:155px;
         background-color:rgb(36, 57, 37) ;
     }
     /*About-Experience*/
